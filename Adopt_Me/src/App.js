@@ -24,13 +24,15 @@ const App = () => {
   ]); */
 
   return (
-    <div>
-      <h1 id="something-important">Adopt Me!</h1>
-      <SearchParams />
-      {/*       <Pet name="Ozzy" animal="Dog" breed="Pug" />
+    <React.StrictMode>
+      <div>
+        <h1 id="something-important">Adopt Me!</h1>
+        <SearchParams />
+        {/*       <Pet name="Ozzy" animal="Dog" breed="Pug" />
       <Pet name="Tino" animal="Dog" breed="Labrador" />
       <Pet name="Girlbert th. 2" animal="Cat" breed="Mix" /> */}
-    </div>
+      </div>
+    </React.StrictMode>
   );
 };
 
