@@ -56,7 +56,7 @@ const SearchParams = () => {
         <BreedDropdown />
         <button>Submit</button>
       </form>
-      <Result pets={pets} />
+      <Results pets={pets} />
     </div>
   );
 };

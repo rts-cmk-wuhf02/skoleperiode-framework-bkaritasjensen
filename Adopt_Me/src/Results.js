@@ -9,11 +9,12 @@ const Results = ({ pets }) => {
       ) : (
         pets.map((pet) => (
           <Pet
-            animal={pets.type}
-            key={pets.id}
-            name={pets.breeds.primaty}
+            animal={pet.type}
+            key={pet.id}
+            name={pet.name}
+            breed={pet.breeds.primary}
             media={pet.photos}
-            location={`${pet.contact.address.city}, ${pet.contact.adress.state}`}
+            location={`${pet.contact.address.city}, ${pet.contact.address.state}`}
             id={pet.id}
           />
         ))
@@ -21,3 +22,5 @@ const Results = ({ pets }) => {
     </div>
   );
 };
+
+export default Results;
